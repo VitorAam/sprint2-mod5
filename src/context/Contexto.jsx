@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
-export const ClienteContext = createContext();
+export const Contexto = createContext();
 
-export const ClienteProvider = ({ children }) => {
-  const [clientes, setClientes] = useState([
+export const ContextoProvider = ({ children }) => {
+  const [usuarios, setUsuarios] = useState([
     {
       nome: 'Camila',
       sobrenome: 'Leite de Melo Mendonça',
@@ -18,8 +18,8 @@ export const ClienteProvider = ({ children }) => {
   ])
 
   return(
-    <ClienteContext.Provider value={{ clientes, setClientes }}>
-      {children}
-    </ClienteContext.Provider>
+    <Contexto.Provider value={{ usuarios, setUsuarios }}>
+      { children }
+    </Contexto.Provider>
   )
 }

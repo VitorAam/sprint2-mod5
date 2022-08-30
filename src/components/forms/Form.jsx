@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { Link } from 'react-router-dom'
-import { ClienteContext } from "../../context/clienteContext";
+import { Contexto } from "../../context/Contexto.jsx";
 import './Form.css'
 
 const Formulario = () => {
@@ -32,7 +32,7 @@ const Formulario = () => {
 
   const [final, setFinal] = useState(false)
 
-  const { clientes, setClientes } = useContext(ClienteContext)
+  const { clientes, setClientes } = useContext(Contexto)
 
   function handleProximoPasso() {
   setPasso((prevState) => prevState + 1);
