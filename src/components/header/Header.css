@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(62, 62, 184);
+    color: white;
+    display: flex;
+    height: 9vh;
+    text-align: center;
+    justify-content: space-around;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    padding-top: 20px;
+    font-size: 1.3rem;
+}

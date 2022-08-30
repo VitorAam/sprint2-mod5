@@ -6,13 +6,14 @@ import Principal from './pages/Principal/Principal.jsx';
 import Cliente from './pages/Cliente/Cliente.jsx';
 import Clientes from './pages/Clientes/Clientes.jsx';
 import Cadastro from './pages/Cadastro/Cadastro.jsx';
+import { HeaderM } from './components/header/Header.jsx';
 
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
-        <h1>Teste</h1>
+        <HeaderM />
         <Routes>
           <Route path='/' element={<Principal />} />
           <Route path='/clientes' element={<Clientes/>} />
