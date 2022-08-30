@@ -13,7 +13,7 @@ const Clientes = () => {
       <div>
       {usuarios.map((cliente, index) => {
         return (
-          <Link key={index} to={`/cliente/${index + 1}`} ><p>{`Cadastro ${index + 1}: ${cliente.nome} ${cliente.sobrenome}`}</p></Link>
+          <Link key={index} to={`/usuario${index + 1}`} ><p>{`Cadastro ${index + 1}: ${cliente.nome} ${cliente.sobrenome}`}</p></Link>
         )
       })}
       </div>

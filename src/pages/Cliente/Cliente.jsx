@@ -6,7 +6,7 @@ import './Cliente.css'
 
 const Cliente = () => {
   let { id } = useParams()
-  const { usuarios, setUsuarios } = useContext(ContextoProvider)
+  const { usuarios, setUsuarios } = useContext(Contexto)
 
   const cliente = usuarios.filter((cliente, index) => index + 1 == id)
 

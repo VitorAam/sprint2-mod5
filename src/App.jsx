@@ -16,9 +16,9 @@ function App() {
         <HeaderM />
         <Routes>
           <Route path='/' element={<Principal />} />
-          <Route path='/clientes' element={<Clientes/>} />
+          <Route path='/usuarios' element={<Clientes/>} />
           <Route path='/cadastro' element={<Cadastro/>} />
-          <Route path='/cliente:id' element={<Cliente/>} />
+          <Route path='/usuario:id' element={<Cliente/>} />
         </Routes>
       </BrowserRouter>
     </div>
